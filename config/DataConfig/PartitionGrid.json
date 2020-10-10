@@ -1,0 +1,10 @@
+{
+    "raw_data_loc" : "Data/SPNOriData/data1/ori_data/all_data.json",
+    "tmp_grid_loc" : "Data/griddata",
+    "accumulation_data" : true,
+    "p_upper_limit": 5,
+    "m_upper_limit" : 10,
+    "each_grid_num" : 5,
+    "labda_num" : 10,
+    "save_grid_loc" : "Data/GridData/DS1"
+}

@@ -1,0 +1,16 @@
+{
+    "write_data_loc" : "Data/SPNOriData/data1/",
+    "place_upper_bound" : 10,
+    "marks_lower_limit" : 4,
+    "marks_upper_limit" : 50,
+    "parallel_job" : 20,
+    "data_num" : 30000,
+    "prune_flag" : true,
+    "add_token" : true,
+    "max_place_num" : 15,
+    "min_place_num" : 5,
+    "visual_flag" : false,
+    "pic_loc" : "Pic",
+    "transformation_flag" : false,
+    "maxtransform_num" : 100
+}

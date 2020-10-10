@@ -1,0 +1,42 @@
+{
+    "gpu": {
+        "use": true,
+        "id": 1
+    },
+    
+    "model": "GCN",
+    "dataset": "DS1",
+    "data_dir" : "Data/GridData/%s/package_data",
+    "out_dir": "out/GridData/spn%s_graph_regression/",
+    
+    "params": {
+        "seed": 20,
+        "epochs": 100,
+        "batch_size": 256,
+        "init_lr": 0.001,
+        "lr_reduce_factor": 0.5,
+        "lr_schedule_patience": 5,
+        "min_lr": 0.0,
+        "weight_decay": 0.0,
+        "print_epoch_interval": 5,
+        "max_time": 48
+    },
+    
+    "net_params": {
+        "L": 10,
+        "node_in_dim" : 16 ,
+        "edage_in_dim" : 1 ,
+        "edge_f" : true,
+        "dst_f" : true,
+        "h_dim" : 150,
+        "hidden_dim": 100,
+        "out_dim": 100,
+        "residual": true,
+        "readout": "mean",
+        "in_feat_dropout": 0.0,
+        "dropout": 0.0,
+        "graph_norm": true,
+        "batch_norm": true,
+        "self_loop": false
+    }
+}
