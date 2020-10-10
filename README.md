@@ -14,104 +14,105 @@ We provide two download methods, including Baidu Cloud and Google Cloud.  And th
 
 ### 1.2 File Structure
 
-> │  
-> ├─GridData
-> │  ├─DS1
-> │  │  ├─ori_data
-> │  │  │      test_data.json
-> │  │  │      train_data.json
-> │  │  │      
-> │  │  ├─package_data
-> │  │  │      dataset.pkl
-> │  │  │      
-> │  │  └─preprocessd_data
-> │  │          test_data.json
-> │  │          train_data.json
-> │  │          
-> │  ├─DS2
-> │  │  ├─ori_data
-> │  │  │      test_data.json
-> │  │  │      train_data.json
-> │  │  │      
-> │  │  ├─package_data
-> │  │  │      dataset.pkl
-> │  │  │      
-> │  │  └─preprocessd_data
-> │  │          test_data.json
-> │  │          train_data.json
-> │  │          
-> │  ├─DS3
-> │  │  ├─ori_data
-> │  │  │      test_data.json
-> │  │  │      train_data.json
-> │  │  │      
-> │  │  ├─package_data
-> │  │  │      dataset.pkl
-> │  │  │      
-> │  │  └─preprocessd_data
-> │  │          test_data.json
-> │  │          train_data.json
-> │  │          
-> │  ├─DS4
-> │  │  ├─ori_data
-> │  │  │      test_data.json
-> │  │  │      train_data.json
-> │  │  │      
-> │  │  ├─package_data
-> │  │  │      dataset.pkl
-> │  │  │      
-> │  │  └─preprocessd_data
-> │  │          test_data.json
-> │  │          train_data.json
-> │  │          
-> │  └─DS5
-> │      ├─ori_data
-> │      │      test_data.json
-> │      │      train_data.json
-> │      │      
-> │      ├─package_data
-> │      │      dataset.pkl
-> │      │      
-> │      └─preprocessd_data
-> │              test_data.json
-> │              train_data.json
-> │              
-> └─RandData
->     ├─DS1
->     │  ├─ori_data
->     │  │      test_data.json
->     │  │      train_data.json
->     │  │      
->     │  ├─package_data
->     │  │      dataset.pkl
->     │  │      
->     │  └─preprocessd_data
->     │          test_data.json
->     │          train_data.json
->     │          
->     ├─DS2
->     │  ├─ori_data
->     │  │      test_data.json
->     │  │      train_data.json
->     │  │      
->     │  ├─package_data
->     │  │      dataset.pkl
->     │  │      
->     │  └─preprocessd_data
->     │          test_data.json
->     │          train_data.json
->     │          
->     └─DS3
->         ├─ori_data
->         │      test_data.json
->         │      train_data.json
->         │      
->         ├─package_data
->         │      dataset.pkl
->         │      
->         └─preprocessd_data
->                 test_data.json
->                 train_data.json
+```
+├─GridData
+│  ├─DS1
+│  │  ├─ori_data
+│  │  │      test_data.json
+│  │  │      train_data.json
+│  │  │      
+│  │  ├─package_data
+│  │  │      dataset.pkl
+│  │  │      
+│  │  └─preprocessd_data
+│  │          test_data.json
+│  │          train_data.json
+│  │          
+│  ├─DS2
+│  │  ├─ori_data
+│  │  │      test_data.json
+│  │  │      train_data.json
+│  │  │      
+│  │  ├─package_data
+│  │  │      dataset.pkl
+│  │  │      
+│  │  └─preprocessd_data
+│  │          test_data.json
+│  │          train_data.json
+│  │          
+│  ├─DS3
+│  │  ├─ori_data
+│  │  │      test_data.json
+│  │  │      train_data.json
+│  │  │      
+│  │  ├─package_data
+│  │  │      dataset.pkl
+│  │  │      
+│  │  └─preprocessd_data
+│  │          test_data.json
+│  │          train_data.json
+│  │          
+│  ├─DS4
+│  │  ├─ori_data
+│  │  │      test_data.json
+│  │  │      train_data.json
+│  │  │      
+│  │  ├─package_data
+│  │  │      dataset.pkl
+│  │  │      
+│  │  └─preprocessd_data
+│  │          test_data.json
+│  │          train_data.json
+│  │          
+│  └─DS5
+│      ├─ori_data
+│      │      test_data.json
+│      │      train_data.json
+│      │      
+│      ├─package_data
+│      │      dataset.pkl
+│      │      
+│      └─preprocessd_data
+│              test_data.json
+│              train_data.json
+│              
+└─RandData
+    ├─DS1
+    │  ├─ori_data
+    │  │      test_data.json
+    │  │      train_data.json
+    │  │      
+    │  ├─package_data
+    │  │      dataset.pkl
+    │  │      
+    │  └─preprocessd_data
+    │          test_data.json
+    │          train_data.json
+    │          
+    ├─DS2
+    │  ├─ori_data
+    │  │      test_data.json
+    │  │      train_data.json
+    │  │      
+    │  ├─package_data
+    │  │      dataset.pkl
+    │  │      
+    │  └─preprocessd_data
+    │          test_data.json
+    │          train_data.json
+    │          
+    └─DS3
+        ├─ori_data
+        │      test_data.json
+        │      train_data.json
+        │      
+        ├─package_data
+        │      dataset.pkl
+        │      
+        └─preprocessd_data
+                test_data.json
+                train_data.json
+```
 
 
 
@@ -139,77 +140,73 @@ We provide two download methods, including Baidu Cloud and Google Cloud.  And th
 
 We save the data as a json file. There are two forms of data, including: the unprocessed raw SPN data (**ori_data**), and **the** input data of net learning algorithms (**preprocessd_data**) obtained after preprocessing the original SPN data. **Ori_data** and **preprocessd_data** in each data set contain two json files, including: the training set (train_data.json) and the  test set (test_data.json). The json  structure is as follows:
 
- 
+ **ori_data/train_data.json**
 
-**ori_data/train_data.json**
-
-
-
-> ├─data1
->
-> │ │   petri_net:
->
-> │ │   arr_vlist:
->
-> │ │   arr_edge:
->
-> │ │   arr_tranidx:
->
-> │ │   spn_labda:
->
-> │ │   spn_steadypro:
->
-> │ │   spn_markdens:
->
-> │ │   spn_mu:
->
-> └─data2
->
-> │ │   petri_net:
->
-> │ │   arr_vlist:
->
-> │ │   arr_edge:
->
-> │ │   arr_tranidx:
->
-> │ │   spn_labda:
->
-> │ │   spn_steadypro:
->
-> │ │   spn_markdens:
->
-> │ │   spn_mu:
+```
 
 
+├─data1
 
+│ │ petri_net:
+
+│ │ arr_vlist:
+
+│ │ arr_edge:
+
+│ │ arr_tranidx:
+
+│ │ spn_labda:
+
+│ │ spn_steadypro:
+
+│ │ spn_markdens:
+
+│ │ spn_mu:
+
+└─data2
+
+│ │ petri_net:
+
+│ │ arr_vlist:
+
+│ │ arr_edge:
+
+│ │ arr_tranidx:
+
+│ │ spn_labda:
+
+│ │ spn_steadypro:
+
+│ │ spn_markdens:
+
+│ │ spn_mu:
+```
 **preprocessd_data/train_data.json**
 
+```
+
+├─data1
+
+│ │ node_f:
+
+│ │ edge_index:
+
+│ │ edge_f:
+
+│ │ label:
+
+└─data2
+
+│ │ node_f:
+
+│ │ edge_index:
+
+│ │ edge_f:
+
+│ │ label:
+```
 
 
-> ├─data1
->
-> │ │   node_f:
->
-> │ │   edge_index:
->
-> │ │   edge_f:
->
-> │ │   label:
->
-> └─data2
->
-> │ │   node_f:
->
-> │ │   edge_index:
->
-> │ │   edge_f:
->
-> │ │   label:
->
-> 
-
- 
 
 #### **Description**:  
 
